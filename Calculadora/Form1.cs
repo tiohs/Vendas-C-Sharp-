@@ -81,11 +81,15 @@ namespace Calculadora
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void PanelMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }
