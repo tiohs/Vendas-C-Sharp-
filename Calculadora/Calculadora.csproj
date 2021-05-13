@@ -50,10 +50,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -63,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -76,6 +104,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem título11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\051-shopping cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\001-shopping bag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
