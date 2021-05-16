@@ -13,11 +13,7 @@ namespace Calculadora
 {
     public partial class Cadastrar : Form
     {
-        SqlConnection conexao;
-        SqlCommand comando;
-        SqlDataAdapter da;
-        SqlDataReader dr;
-        string strSql;
+        
         public Cadastrar()
         {
             InitializeComponent();
@@ -57,6 +53,20 @@ namespace Calculadora
         private void iD_PRODUTOTextBox_TextChanged(object sender, EventArgs e)
         {
             this.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexao = new SqlConnection(@"Data Source=HS-PC\SQLEXPRESS;Initial Catalog=AREA_VENDAS;Integrated Security=True");
+            conexao.Open();
+            SqlCommand cmd = new SqlCommand("INSERT INTO PRODUTOS(NOME_PRODUTO,PRECO,QUANTIDADE) VALUES(@nome,@produto, @Quantidade)", conexao);
+            cmd.Parameters.AddWithValue("@nome", nOME_PRODUTOTextBox.Text);
+            cmd.Parameters.AddWithValue("@produto", decimal.Parse(pRECOTextBox.Text));
+            cmd.Parameters.AddWithValue("@Quantidade", float.Parse(qUANTIDADETextBox.Text));
+            cmd.ExecuteNonQuery();
+
+            conexao.Close();
+
         }
     }
 }
