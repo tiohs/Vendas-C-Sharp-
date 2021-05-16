@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Calculadora
 {
@@ -74,6 +75,9 @@ namespace Calculadora
         {
             Cadastrar cadastrar = new Cadastrar();
             cadastrar.Show();
+            cadastrar.pRECOTextBox.Text = "";
+            cadastrar.nOME_PRODUTOTextBox.Text = "";
+            cadastrar.qUANTIDADETextBox.Text = "";
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Calculadora
 {
     public partial class Cadastrar : Form
     {
+        SqlConnection conexao;
+        SqlCommand comando;
+        SqlDataAdapter da;
+        SqlDataReader dr;
+        string strSql;
         public Cadastrar()
         {
             InitializeComponent();
@@ -41,6 +47,16 @@ namespace Calculadora
         private void pRODUTOSBindingNavigator_RefreshItems(object sender, EventArgs e)
         {
 
+        }
+
+        private void salvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iD_PRODUTOTextBox_TextChanged(object sender, EventArgs e)
+        {
+            this.Text = "";
         }
     }
 }

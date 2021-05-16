@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label iD_PRODUTOLabel;
             System.Windows.Forms.Label nOME_PRODUTOLabel;
             System.Windows.Forms.Label pRECOLabel;
             System.Windows.Forms.Label qUANTIDADELabel;
@@ -38,14 +37,14 @@
             this.pRODUTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pRODUTOSTableAdapter = new Calculadora.AREA_VENDASDataSetTableAdapters.PRODUTOSTableAdapter();
             this.tableAdapterManager = new Calculadora.AREA_VENDASDataSetTableAdapters.TableAdapterManager();
-            this.pRODUTOSBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.iD_PRODUTOTextBox = new System.Windows.Forms.TextBox();
-            this.pRODUTOSBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nOME_PRODUTOTextBox = new System.Windows.Forms.TextBox();
             this.pRECOTextBox = new System.Windows.Forms.TextBox();
             this.qUANTIDADETextBox = new System.Windows.Forms.TextBox();
+            this.iD_PRODUTOTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            iD_PRODUTOLabel = new System.Windows.Forms.Label();
+            this.pRODUTOSBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.pRODUTOSBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             nOME_PRODUTOLabel = new System.Windows.Forms.Label();
             pRECOLabel = new System.Windows.Forms.Label();
             qUANTIDADELabel = new System.Windows.Forms.Label();
@@ -54,6 +53,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.pRODUTOSBindingNavigator)).BeginInit();
             this.pRODUTOSBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // nOME_PRODUTOLabel
+            // 
+            nOME_PRODUTOLabel.AutoSize = true;
+            nOME_PRODUTOLabel.Location = new System.Drawing.Point(46, 98);
+            nOME_PRODUTOLabel.Name = "nOME_PRODUTOLabel";
+            nOME_PRODUTOLabel.Size = new System.Drawing.Size(99, 13);
+            nOME_PRODUTOLabel.TabIndex = 3;
+            nOME_PRODUTOLabel.Text = "NOME PRODUTO:";
+            // 
+            // pRECOLabel
+            // 
+            pRECOLabel.AutoSize = true;
+            pRECOLabel.Location = new System.Drawing.Point(46, 144);
+            pRECOLabel.Name = "pRECOLabel";
+            pRECOLabel.Size = new System.Drawing.Size(47, 13);
+            pRECOLabel.TabIndex = 5;
+            pRECOLabel.Text = "PRECO:";
+            // 
+            // qUANTIDADELabel
+            // 
+            qUANTIDADELabel.AutoSize = true;
+            qUANTIDADELabel.Location = new System.Drawing.Point(46, 189);
+            qUANTIDADELabel.Name = "qUANTIDADELabel";
+            qUANTIDADELabel.Size = new System.Drawing.Size(81, 13);
+            qUANTIDADELabel.TabIndex = 7;
+            qUANTIDADELabel.Text = "QUANTIDADE:";
             // 
             // aREA_VENDASDataSet
             // 
@@ -75,6 +101,61 @@
             this.tableAdapterManager.PRODUTOSTableAdapter = this.pRODUTOSTableAdapter;
             this.tableAdapterManager.UpdateOrder = Calculadora.AREA_VENDASDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // nOME_PRODUTOTextBox
+            // 
+            this.nOME_PRODUTOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "NOME_PRODUTO", true));
+            this.nOME_PRODUTOTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nOME_PRODUTOTextBox.Location = new System.Drawing.Point(161, 91);
+            this.nOME_PRODUTOTextBox.Name = "nOME_PRODUTOTextBox";
+            this.nOME_PRODUTOTextBox.Size = new System.Drawing.Size(325, 24);
+            this.nOME_PRODUTOTextBox.TabIndex = 4;
+            // 
+            // pRECOTextBox
+            // 
+            this.pRECOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "PRECO", true));
+            this.pRECOTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pRECOTextBox.Location = new System.Drawing.Point(161, 133);
+            this.pRECOTextBox.Name = "pRECOTextBox";
+            this.pRECOTextBox.Size = new System.Drawing.Size(325, 24);
+            this.pRECOTextBox.TabIndex = 6;
+            // 
+            // qUANTIDADETextBox
+            // 
+            this.qUANTIDADETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "QUANTIDADE", true));
+            this.qUANTIDADETextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qUANTIDADETextBox.Location = new System.Drawing.Point(161, 178);
+            this.qUANTIDADETextBox.Name = "qUANTIDADETextBox";
+            this.qUANTIDADETextBox.Size = new System.Drawing.Size(325, 24);
+            this.qUANTIDADETextBox.TabIndex = 8;
+            // 
+            // iD_PRODUTOTextBox
+            // 
+            this.iD_PRODUTOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "ID_PRODUTO", true));
+            this.iD_PRODUTOTextBox.Location = new System.Drawing.Point(343, 300);
+            this.iD_PRODUTOTextBox.Name = "iD_PRODUTOTextBox";
+            this.iD_PRODUTOTextBox.Size = new System.Drawing.Size(325, 20);
+            this.iD_PRODUTOTextBox.TabIndex = 2;
+            this.iD_PRODUTOTextBox.TextChanged += new System.EventHandler(this.iD_PRODUTOTextBox_TextChanged);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            // 
+            // pRODUTOSBindingNavigatorSaveItem
+            // 
+            this.pRODUTOSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.pRODUTOSBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pRODUTOSBindingNavigatorSaveItem.Image")));
+            this.pRODUTOSBindingNavigatorSaveItem.Name = "pRODUTOSBindingNavigatorSaveItem";
+            this.pRODUTOSBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.pRODUTOSBindingNavigatorSaveItem.Text = "Save Data";
+            this.pRODUTOSBindingNavigatorSaveItem.Click += new System.EventHandler(this.pRODUTOSBindingNavigatorSaveItem_Click);
+            // 
             // pRODUTOSBindingNavigator
             // 
             this.pRODUTOSBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -83,7 +164,8 @@
             this.pRODUTOSBindingNavigator.DeleteItem = null;
             this.pRODUTOSBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorAddNewItem,
-            this.pRODUTOSBindingNavigatorSaveItem});
+            this.pRODUTOSBindingNavigatorSaveItem,
+            this.toolStripButton1});
             this.pRODUTOSBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.pRODUTOSBindingNavigator.MoveFirstItem = null;
             this.pRODUTOSBindingNavigator.MoveLastItem = null;
@@ -96,92 +178,14 @@
             this.pRODUTOSBindingNavigator.Text = "bindingNavigator1";
             this.pRODUTOSBindingNavigator.RefreshItems += new System.EventHandler(this.pRODUTOSBindingNavigator_RefreshItems);
             // 
-            // iD_PRODUTOLabel
+            // toolStripButton1
             // 
-            iD_PRODUTOLabel.AutoSize = true;
-            iD_PRODUTOLabel.Location = new System.Drawing.Point(12, 56);
-            iD_PRODUTOLabel.Name = "iD_PRODUTOLabel";
-            iD_PRODUTOLabel.Size = new System.Drawing.Size(78, 13);
-            iD_PRODUTOLabel.TabIndex = 1;
-            iD_PRODUTOLabel.Text = "ID PRODUTO:";
-            // 
-            // iD_PRODUTOTextBox
-            // 
-            this.iD_PRODUTOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "ID_PRODUTO", true));
-            this.iD_PRODUTOTextBox.Location = new System.Drawing.Point(115, 56);
-            this.iD_PRODUTOTextBox.Name = "iD_PRODUTOTextBox";
-            this.iD_PRODUTOTextBox.Size = new System.Drawing.Size(325, 20);
-            this.iD_PRODUTOTextBox.TabIndex = 2;
-            // 
-            // pRODUTOSBindingNavigatorSaveItem
-            // 
-            this.pRODUTOSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.pRODUTOSBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pRODUTOSBindingNavigatorSaveItem.Image")));
-            this.pRODUTOSBindingNavigatorSaveItem.Name = "pRODUTOSBindingNavigatorSaveItem";
-            this.pRODUTOSBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.pRODUTOSBindingNavigatorSaveItem.Text = "Save Data";
-            this.pRODUTOSBindingNavigatorSaveItem.Click += new System.EventHandler(this.pRODUTOSBindingNavigatorSaveItem_Click);
-            // 
-            // nOME_PRODUTOLabel
-            // 
-            nOME_PRODUTOLabel.AutoSize = true;
-            nOME_PRODUTOLabel.Location = new System.Drawing.Point(10, 94);
-            nOME_PRODUTOLabel.Name = "nOME_PRODUTOLabel";
-            nOME_PRODUTOLabel.Size = new System.Drawing.Size(99, 13);
-            nOME_PRODUTOLabel.TabIndex = 3;
-            nOME_PRODUTOLabel.Text = "NOME PRODUTO:";
-            // 
-            // nOME_PRODUTOTextBox
-            // 
-            this.nOME_PRODUTOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "NOME_PRODUTO", true));
-            this.nOME_PRODUTOTextBox.Location = new System.Drawing.Point(115, 91);
-            this.nOME_PRODUTOTextBox.Name = "nOME_PRODUTOTextBox";
-            this.nOME_PRODUTOTextBox.Size = new System.Drawing.Size(325, 20);
-            this.nOME_PRODUTOTextBox.TabIndex = 4;
-            // 
-            // pRECOLabel
-            // 
-            pRECOLabel.AutoSize = true;
-            pRECOLabel.Location = new System.Drawing.Point(12, 128);
-            pRECOLabel.Name = "pRECOLabel";
-            pRECOLabel.Size = new System.Drawing.Size(47, 13);
-            pRECOLabel.TabIndex = 5;
-            pRECOLabel.Text = "PRECO:";
-            // 
-            // pRECOTextBox
-            // 
-            this.pRECOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "PRECO", true));
-            this.pRECOTextBox.Location = new System.Drawing.Point(115, 128);
-            this.pRECOTextBox.Name = "pRECOTextBox";
-            this.pRECOTextBox.Size = new System.Drawing.Size(325, 20);
-            this.pRECOTextBox.TabIndex = 6;
-            // 
-            // qUANTIDADELabel
-            // 
-            qUANTIDADELabel.AutoSize = true;
-            qUANTIDADELabel.Location = new System.Drawing.Point(12, 156);
-            qUANTIDADELabel.Name = "qUANTIDADELabel";
-            qUANTIDADELabel.Size = new System.Drawing.Size(81, 13);
-            qUANTIDADELabel.TabIndex = 7;
-            qUANTIDADELabel.Text = "QUANTIDADE:";
-            // 
-            // qUANTIDADETextBox
-            // 
-            this.qUANTIDADETextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pRODUTOSBindingSource, "QUANTIDADE", true));
-            this.qUANTIDADETextBox.Location = new System.Drawing.Point(115, 156);
-            this.qUANTIDADETextBox.Name = "qUANTIDADETextBox";
-            this.qUANTIDADETextBox.Size = new System.Drawing.Size(325, 20);
-            this.qUANTIDADETextBox.TabIndex = 8;
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // Cadastrar
             // 
@@ -194,7 +198,6 @@
             this.Controls.Add(this.pRECOTextBox);
             this.Controls.Add(nOME_PRODUTOLabel);
             this.Controls.Add(this.nOME_PRODUTOTextBox);
-            this.Controls.Add(iD_PRODUTOLabel);
             this.Controls.Add(this.iD_PRODUTOTextBox);
             this.Controls.Add(this.pRODUTOSBindingNavigator);
             this.Name = "Cadastrar";
@@ -216,12 +219,13 @@
         private System.Windows.Forms.BindingSource pRODUTOSBindingSource;
         private AREA_VENDASDataSetTableAdapters.PRODUTOSTableAdapter pRODUTOSTableAdapter;
         private AREA_VENDASDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator pRODUTOSBindingNavigator;
         private System.Windows.Forms.ToolStripButton pRODUTOSBindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox iD_PRODUTOTextBox;
-        private System.Windows.Forms.TextBox nOME_PRODUTOTextBox;
-        private System.Windows.Forms.TextBox pRECOTextBox;
-        private System.Windows.Forms.TextBox qUANTIDADETextBox;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.BindingNavigator pRODUTOSBindingNavigator;
+        public System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        public System.Windows.Forms.TextBox nOME_PRODUTOTextBox;
+        public System.Windows.Forms.TextBox pRECOTextBox;
+        public System.Windows.Forms.TextBox qUANTIDADETextBox;
+        public System.Windows.Forms.TextBox iD_PRODUTOTextBox;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
