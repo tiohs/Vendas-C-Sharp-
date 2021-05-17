@@ -87,5 +87,17 @@ namespace Calculadora
         {
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
+            }
+            else {
+                pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetDataBy(int.Parse(textBox1.Text));
+            }
+            
+        } 
     }
 }

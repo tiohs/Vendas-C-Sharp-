@@ -121,6 +121,9 @@
   <data name="Sem título8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sem título8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sem título7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sem título7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,8 +136,17 @@
   <data name="051-shopping cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\051-shopping cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="UNIPLACE PNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UNIPLACE PNG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="virtual_machine_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\virtual_machine_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sem título5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sem título5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deletep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deletep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="001-shopping bag" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\001-shopping bag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +169,7 @@
   <data name="Sem título6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sem título6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="UNIPLACE PNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UNIPLACE PNG1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unchecked_checkbox_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unchecked_checkbox_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

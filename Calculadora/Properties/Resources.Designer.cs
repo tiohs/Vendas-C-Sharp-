@@ -83,6 +83,26 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deletep {
+            get {
+                object obj = ResourceManager.GetObject("deletep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_32px {
+            get {
+                object obj = ResourceManager.GetObject("search_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sem_título {
             get {
                 object obj = ResourceManager.GetObject("Sem título", resourceCulture);
@@ -193,9 +213,29 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap unchecked_checkbox_24px {
+            get {
+                object obj = ResourceManager.GetObject("unchecked_checkbox_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap UNIPLACE_PNG1 {
             get {
                 object obj = ResourceManager.GetObject("UNIPLACE PNG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap virtual_machine_24px {
+            get {
+                object obj = ResourceManager.GetObject("virtual_machine_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

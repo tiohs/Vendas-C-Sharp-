@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.name = new System.Windows.Forms.TextBox();
             this.preco = new System.Windows.Forms.TextBox();
             this.qt = new System.Windows.Forms.TextBox();
@@ -36,6 +37,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.aREA_VENDASDataSet = new Calculadora.AREA_VENDASDataSet();
+            this.pRODUTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRODUTOSTableAdapter = new Calculadora.AREA_VENDASDataSetTableAdapters.PRODUTOSTableAdapter();
+            this.tableAdapterManager = new Calculadora.AREA_VENDASDataSetTableAdapters.TableAdapterManager();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.aREA_VENDASDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRODUTOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // name
@@ -122,12 +131,45 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // aREA_VENDASDataSet
+            // 
+            this.aREA_VENDASDataSet.DataSetName = "AREA_VENDASDataSet";
+            this.aREA_VENDASDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pRODUTOSBindingSource
+            // 
+            this.pRODUTOSBindingSource.DataMember = "PRODUTOS";
+            this.pRODUTOSBindingSource.DataSource = this.aREA_VENDASDataSet;
+            // 
+            // pRODUTOSTableAdapter
+            // 
+            this.pRODUTOSTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.PRODUTOSTableAdapter = this.pRODUTOSTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Calculadora.AREA_VENDASDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Calculadora.Properties.Resources.deletep;
+            this.pictureBox1.Location = new System.Drawing.Point(666, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(703, 383);
+            this.ClientSize = new System.Drawing.Size(703, 361);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -140,6 +182,10 @@
             this.Name = "Cadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar";
+            this.Load += new System.EventHandler(this.Cadastrar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.aREA_VENDASDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRODUTOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +201,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private AREA_VENDASDataSet aREA_VENDASDataSet;
+        private System.Windows.Forms.BindingSource pRODUTOSBindingSource;
+        private AREA_VENDASDataSetTableAdapters.PRODUTOSTableAdapter pRODUTOSTableAdapter;
+        private AREA_VENDASDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

@@ -43,16 +43,38 @@ namespace Calculadora
              cmd.Parameters.AddWithValue("@produto", decimal.Parse(preco.Text));
              cmd.Parameters.AddWithValue("@Quantidade", float.Parse(qt.Text));
              cmd.ExecuteNonQuery();
-             Productos produto = new Productos();
+             
             conexao.Close();
+            Productos produto = new Productos();
+            produto.pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
             this.Close();
-           
-           
+
+            
         }
 
         private void name_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pRODUTOSBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.pRODUTOSBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.aREA_VENDASDataSet);
+
+        }
+
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'aREA_VENDASDataSet.PRODUTOS' table. You can move, or remove it, as needed.
+            this.pRODUTOSTableAdapter.Fill(this.aREA_VENDASDataSet.PRODUTOS);
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

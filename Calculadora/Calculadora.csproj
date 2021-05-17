@@ -187,6 +187,18 @@
   <ItemGroup>
     <None Include="Resources\UNIPLACE PNG1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\virtual_machine_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unchecked_checkbox_24px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
