@@ -85,7 +85,22 @@ namespace Calculadora
 
         private void button2_Click(object sender, EventArgs e)
         {
-             
+            try {
+                SqlConnection conexao = new SqlConnection(@"Data Source=HS-PC\SQLEXPRESS;Initial Catalog=AREA_VENDAS;Integrated Security=True");
+                conexao.Open();
+                SqlCommand cmd = new SqlCommand("update PRODUTOS set NOME_PRODUTO = @nome, PRECO = @PRECO,QUANTIDADE = @Qt Where ID_PRODUTO = @ID ", conexao);
+                cmd.Parameters.AddWithValue("@ID", int.Parse(iD_PRODUTOTextBox.Text));
+                cmd.Parameters.AddWithValue("@nome", nOME_PRODUTOTextBox.Text);
+                cmd.Parameters.AddWithValue("@PRECO", decimal.Parse(pRECOTextBox.Text));
+                cmd.Parameters.AddWithValue("@Qt", float.Parse(qUANTIDADETextBox.Text));
+                cmd.ExecuteNonQuery();
+
+                conexao.Close();
+                pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
+            } catch(Exception erro){
+                MessageBox.Show(erro.Message);
+            }
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -103,6 +118,31 @@ namespace Calculadora
         private void button4_Click_1(object sender, EventArgs e)
         {
             pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
+            iD_PRODUTOTextBox.Clear();
+            nOME_PRODUTOTextBox.Clear();
+            pRECOTextBox.Clear();
+            qUANTIDADETextBox.Clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                SqlConnection conexao = new SqlConnection(@"Data Source=HS-PC\SQLEXPRESS;Initial Catalog=AREA_VENDAS;Integrated Security=True");
+                conexao.Open();
+                SqlCommand cmd = new SqlCommand("Delete produtos Where ID_PRODUTO = @ID ", conexao);
+                cmd.Parameters.AddWithValue("@ID", int.Parse(iD_PRODUTOTextBox.Text));
+                
+                cmd.ExecuteNonQuery();
+
+                conexao.Close();
+                pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         } 
     }
 }
