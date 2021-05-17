@@ -83,6 +83,16 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap advanced_search_32px {
+            get {
+                object obj = ResourceManager.GetObject("advanced_search_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deletep {
             get {
                 object obj = ResourceManager.GetObject("deletep", resourceCulture);
@@ -213,6 +223,46 @@ namespace Calculadora.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sheet_of_paper_32px {
+            get {
+                object obj = ResourceManager.GetObject("sheet_of_paper_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_24px {
+            get {
+                object obj = ResourceManager.GetObject("shopping_cart_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutdown_24px {
+            get {
+                object obj = ResourceManager.GetObject("shutdown_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tv_32px {
+            get {
+                object obj = ResourceManager.GetObject("tv_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap unchecked_checkbox_24px {
             get {
                 object obj = ResourceManager.GetObject("unchecked_checkbox_24px", resourceCulture);
@@ -226,6 +276,16 @@ namespace Calculadora.Properties {
         internal static System.Drawing.Bitmap UNIPLACE_PNG1 {
             get {
                 object obj = ResourceManager.GetObject("UNIPLACE PNG1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_24px {
+            get {
+                object obj = ResourceManager.GetObject("user_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

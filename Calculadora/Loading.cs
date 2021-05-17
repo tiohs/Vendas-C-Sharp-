@@ -26,6 +26,9 @@ namespace Calculadora
         {
             progressBar1.Value += 1;
             if (progressBar1.Value == 100) {
+                Form1 form = new Form1();
+                form.Show();
+                this.Visible = false;
                 timer1.Stop();
             }
         }

@@ -76,8 +76,8 @@ namespace Calculadora
         {
             if (txtUser.Text == "USUARIO" && txtPass.Text == "PALAVRA-PASSE")
             {
-                Form1 form = new Form1();
-                form.Show();
+                Loading load = new Loading();
+                load.Show();
                 this.Visible = false;
             }
             else {

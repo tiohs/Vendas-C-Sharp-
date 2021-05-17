@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -39,6 +38,7 @@
             this.lOGAR = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtErro = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,16 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 330);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Calculadora.Properties.Resources.UNIPLACE_PNG1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(244, 315);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // shapeContainer1
             // 
@@ -181,6 +171,16 @@
             this.txtErro.Text = "Palavra-Passe ou usuário não existe ";
             this.txtErro.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Calculadora.Properties.Resources.UNIPLACE_PNG1;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(244, 315);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,8 +218,8 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button lOGAR;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label txtErro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -85,7 +85,7 @@ namespace Calculadora
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+             
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -98,6 +98,11 @@ namespace Calculadora
                 pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetDataBy(int.Parse(textBox1.Text));
             }
             
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            pRODUTOSDataGridView.DataSource = pRODUTOSTableAdapter.GetData();
         } 
     }
 }
