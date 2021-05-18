@@ -61,11 +61,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AREA_VENDASDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="AREA_VENDASDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AREA_VENDASDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Caixa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Caixa.Designer.cs">
       <DependentUpon>Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cliente.Designer.cs">
+      <DependentUpon>cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -106,8 +117,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQL\conexao.cs" />
+    <Compile Include="Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas.Designer.cs">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Caixa.resx">
       <DependentUpon>Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cliente.resx">
+      <DependentUpon>cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -137,6 +157,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vendas.resx">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="AREA_VENDASDataSet.xsc">
       <DependentUpon>AREA_VENDASDataSet.xsd</DependentUpon>
     </None>
@@ -169,6 +192,17 @@
     </None>
     <None Include="AREA_VENDASDataSet2.xss">
       <DependentUpon>AREA_VENDASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet3.xsc">
+      <DependentUpon>AREA_VENDASDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AREA_VENDASDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AREA_VENDASDataSet3.xss">
+      <DependentUpon>AREA_VENDASDataSet3.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

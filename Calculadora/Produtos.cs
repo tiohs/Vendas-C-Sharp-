@@ -20,30 +20,28 @@ namespace Calculadora
         private void produtoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.produtoBindingSource.EndEdit();
+
           
 
         }
 
         private void Produtos_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.produto' table. You can move, or remove it, as needed.
-            this.produtoTableAdapter.Fill(this.aREA_VENDASDataSet2.produto);
-            // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.itens_venda' table. You can move, or remove it, as needed.
-    
-            // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.produto' table. You can move, or remove it, as needed.
-            this.produtoTableAdapter.Fill(this.aREA_VENDASDataSet2.produto);
-          
-            // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.produto' table. You can move, or remove it, as needed.
-
+            // TODO: This line of code loads data into the 'aREA_VENDASDataSet3.produto' table. You can move, or remove it, as needed.
+            this.produtoTableAdapter.Fill(this.aREA_VENDASDataSet3.produto);
 
         }
 
         private void produtoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
         {
+            
+        }
+
+        private void produtoBindingNavigatorSaveItem_Click_2(object sender, EventArgs e)
+        {
             this.Validate();
             this.produtoBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.aREA_VENDASDataSet2);
+            this.tableAdapterManager.UpdateAll(this.aREA_VENDASDataSet3);
 
         }
     }
