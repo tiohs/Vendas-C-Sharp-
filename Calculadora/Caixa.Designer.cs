@@ -187,6 +187,7 @@
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(270, 26);
             this.txtCod.TabIndex = 19;
+            this.txtCod.TextChanged += new System.EventHandler(this.txtCod_TextChanged_1);
             // 
             // label2
             // 

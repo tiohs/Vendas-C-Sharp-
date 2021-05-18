@@ -62,6 +62,7 @@ namespace Calculadora
 
         private void Caixa_Load(object sender, EventArgs e)
         {
+            GerarCodigoVenda();
             NomearDataGrid();
         }
 
@@ -73,6 +74,11 @@ namespace Calculadora
         }
 
         private void txtCod_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCod_TextChanged_1(object sender, EventArgs e)
         {
 
         }
