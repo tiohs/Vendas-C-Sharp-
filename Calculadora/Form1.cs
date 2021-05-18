@@ -37,7 +37,7 @@ namespace Calculadora
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormNija(new Productos());
+            AbrirFormNija(new Produtos());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace Calculadora
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormNija(new Funcionario());
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -97,6 +97,11 @@ namespace Calculadora
         private void timer1_Tick(object sender, EventArgs e)
         {
          
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormNija(new cliente());
         }
         
     }

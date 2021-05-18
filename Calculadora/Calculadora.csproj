@@ -51,17 +51,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AREA_VENDASDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Produtos\Cadastrar.cs">
+    <Compile Include="AREA_VENDASDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AREA_VENDASDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AREA_VENDASDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AREA_VENDASDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Caixa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produtos\Cadastrar.Designer.cs">
-      <DependentUpon>Cadastrar.cs</DependentUpon>
+    <Compile Include="Caixa.Designer.cs">
+      <DependentUpon>Caixa.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario.Designer.cs">
+      <DependentUpon>Funcionario.cs</DependentUpon>
     </Compile>
     <Compile Include="inicio.cs">
       <SubType>Form</SubType>
@@ -81,20 +97,23 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produtos\Productos.cs">
+    <Compile Include="Produtos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produtos\Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <Compile Include="Produtos.Designer.cs">
+      <DependentUpon>Produtos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQL\conexao.cs" />
-    <EmbeddedResource Include="Produtos\Cadastrar.resx">
-      <DependentUpon>Cadastrar.cs</DependentUpon>
+    <EmbeddedResource Include="Caixa.resx">
+      <DependentUpon>Caixa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario.resx">
+      <DependentUpon>Funcionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
@@ -105,8 +124,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produtos\Productos.resx">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <EmbeddedResource Include="Produtos.resx">
+      <DependentUpon>Produtos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +147,28 @@
     </None>
     <None Include="AREA_VENDASDataSet.xss">
       <DependentUpon>AREA_VENDASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet1.xsc">
+      <DependentUpon>AREA_VENDASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AREA_VENDASDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AREA_VENDASDataSet1.xss">
+      <DependentUpon>AREA_VENDASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet2.xsc">
+      <DependentUpon>AREA_VENDASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AREA_VENDASDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AREA_VENDASDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AREA_VENDASDataSet2.xss">
+      <DependentUpon>AREA_VENDASDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -216,6 +257,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sheet_of_paper_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Produtos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
