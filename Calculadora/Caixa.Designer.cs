@@ -69,21 +69,17 @@
             // 
             // txtValorCompra
             // 
-            this.txtValorCompra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtValorCompra.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.txtValorCompra.Enabled = false;
             this.txtValorCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValorCompra.Location = new System.Drawing.Point(283, 382);
             this.txtValorCompra.Name = "txtValorCompra";
-            this.txtValorCompra.Size = new System.Drawing.Size(245, 26);
+            this.txtValorCompra.Size = new System.Drawing.Size(199, 26);
             this.txtValorCompra.TabIndex = 31;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
@@ -102,7 +98,7 @@
             this.dataGridViewProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProdutos.Location = new System.Drawing.Point(55, 199);
             this.dataGridViewProdutos.Name = "dataGridViewProdutos";
-            this.dataGridViewProdutos.Size = new System.Drawing.Size(722, 158);
+            this.dataGridViewProdutos.Size = new System.Drawing.Size(676, 158);
             this.dataGridViewProdutos.TabIndex = 29;
             // 
             // txtTotal
@@ -114,7 +110,7 @@
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.Location = new System.Drawing.Point(379, 166);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(149, 26);
+            this.txtTotal.Size = new System.Drawing.Size(103, 26);
             this.txtTotal.TabIndex = 27;
             // 
             // label6
@@ -140,7 +136,7 @@
             this.txtQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantidade.Location = new System.Drawing.Point(192, 167);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(181, 26);
+            this.txtQuantidade.Size = new System.Drawing.Size(135, 26);
             this.txtQuantidade.TabIndex = 25;
             this.txtQuantidade.Validating += new System.ComponentModel.CancelEventHandler(this.txtQuantidade_Validating);
             // 
@@ -168,7 +164,7 @@
             this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValor.Location = new System.Drawing.Point(55, 167);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(131, 26);
+            this.txtValor.Size = new System.Drawing.Size(85, 26);
             this.txtValor.TabIndex = 23;
             // 
             // label4
@@ -195,7 +191,7 @@
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(449, 96);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(328, 26);
+            this.txtNome.Size = new System.Drawing.Size(282, 26);
             this.txtNome.TabIndex = 21;
             // 
             // label3
@@ -221,7 +217,7 @@
             this.txtCod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCod.Location = new System.Drawing.Point(173, 96);
             this.txtCod.Name = "txtCod";
-            this.txtCod.Size = new System.Drawing.Size(270, 26);
+            this.txtCod.Size = new System.Drawing.Size(224, 26);
             this.txtCod.TabIndex = 19;
             this.txtCod.TextChanged += new System.EventHandler(this.txtCod_TextChanged_1);
             this.txtCod.Validating += new System.ComponentModel.CancelEventHandler(this.txtCod_Validating_1);
@@ -261,7 +257,7 @@
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::Calculadora.Properties.Resources.virtual_machine_24px;
-            this.pictureBox4.Location = new System.Drawing.Point(796, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(750, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -285,7 +281,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Calculadora.Properties.Resources.deletep;
-            this.pictureBox1.Location = new System.Drawing.Point(827, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(781, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -295,14 +291,14 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFinalizar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFinalizar.BackColor = System.Drawing.Color.SeaGreen;
             this.btnFinalizar.FlatAppearance.BorderSize = 0;
             this.btnFinalizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnFinalizar.Location = new System.Drawing.Point(549, 373);
+            this.btnFinalizar.Location = new System.Drawing.Point(503, 373);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(215, 41);
             this.btnFinalizar.TabIndex = 38;
@@ -319,7 +315,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(562, 152);
+            this.button1.Location = new System.Drawing.Point(516, 152);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(215, 41);
             this.button1.TabIndex = 41;
@@ -332,7 +328,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(858, 566);
+            this.ClientSize = new System.Drawing.Size(812, 566);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.pictureBox4);

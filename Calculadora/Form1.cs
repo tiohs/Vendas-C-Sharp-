@@ -106,7 +106,15 @@ namespace Calculadora
 
         private void button2_Click(object sender, EventArgs e)
         {
+            AbrirFormNija(new Vendas());
+        }
 
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Visible = false;
+            Login login = new Login();
+            login.Show();
         }
         
     }

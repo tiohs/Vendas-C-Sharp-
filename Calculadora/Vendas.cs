@@ -27,6 +27,8 @@ namespace Calculadora
 
         private void Vendas_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.itens_venda' table. You can move, or remove it, as needed.
+            this.itens_vendaTableAdapter.Fill(this.aREA_VENDASDataSet2.itens_venda);
             // TODO: This line of code loads data into the 'aREA_VENDASDataSet2.venda' table. You can move, or remove it, as needed.
             this.vendaTableAdapter.Fill(this.aREA_VENDASDataSet2.venda);
 
