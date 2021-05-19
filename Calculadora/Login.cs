@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Calculadora
 {
@@ -16,6 +17,7 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+        string query;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -71,14 +73,64 @@ namespace Calculadora
         {
             Application.Exit();
         }
+        private Boolean logars(string op)
+        {
+            SqlConnection conexao = new SqlConnection(@"Data Source=HS-PC\SQLEXPRESS;Initial Catalog=AREA_VENDAS;Integrated Security=True");
+            conexao.Open();
+            if (op == "admin")
+            {
+                query = "SELECT * FROM administrador WHERE adm_Login = '" + txtUser.Text + "' and adm_Senha = '" + txtPass.Text + "'";
+            }
+            else {
+                query = "SELECT * FROM funcionario WHERE fc_usuario = '" + txtUser.Text + "' and fc_senha = '" + txtPass.Text + "'";
+            }
+            
+            SqlCommand comando = new SqlCommand(query, conexao);
+
+            try
+            {
+                SqlDataReader dr = comando.ExecuteReader();
+                dr.Read();
+
+                if (!dr.HasRows)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return true;
+        }
 
         private void lOGAR_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "USUARIO" && txtPass.Text == "PALAVRA-PASSE")
+            if (txtUser.Text != "USUARIO" && txtPass.Text != "PALAVRA-PASSE")
             {
-                Loading load = new Loading();
-                load.Show();
-                this.Visible = false;
+                if (logars("admin"))
+                {
+                    Loading load = new Loading();
+                    load.Show();
+                    this.Visible = false;
+                } 
+                if(logars("func")) {
+                    Caixa caixa = new Caixa();
+                    caixa.Show();
+                    this.Visible = false;
+
+                }
+          
+                else {
+                    txtErro.Visible = true;
+                    txtErro.Text = "Usuário ou senha incorrecta ";
+                }
+
             }
             else {
                 txtErro.Visible = true;
